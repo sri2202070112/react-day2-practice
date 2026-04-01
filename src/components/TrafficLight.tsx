@@ -72,7 +72,6 @@ const TrafficLight: React.FC<TrafficLightProps> = ({ color }) => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <span style={{ color: '#d4af37', fontSize: '0.9rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>System Status</span>
         <h3 style={{ 
           color: accentColor, 
           fontSize: '2rem', 
