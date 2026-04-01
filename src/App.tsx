@@ -24,6 +24,15 @@ function App() {
     setIsVisible(true);
   }, []);
 
+  // Prevent scrolling on the landing page
+  useEffect(() => {
+    if (!hasEntered) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [hasEntered]);
+
   const handleButtonClick = (action: string, color: string) => {
     setActiveAction(action);
     setActiveColor(color);
@@ -52,7 +61,8 @@ function App() {
         height: '100vh', 
         display: 'flex', 
         justifyContent: 'center', 
-        alignItems: 'center'
+        alignItems: 'center',
+        overflow: 'hidden'
       }}>
         <div className="glass-accent" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '600px' }} />
         <div style={{ textAlign: 'center', zIndex: 100 }}>
