@@ -196,7 +196,7 @@ function App() {
               <TrafficLight color={lightColor} />
               <Button
                 label="CYCLE STATUS"
-                color="#8b6508"
+                color="#f1c40f"
                 onClick={cycleLight}
               />
             </div>
