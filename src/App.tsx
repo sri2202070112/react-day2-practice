@@ -66,7 +66,7 @@ function App() {
       }}>
         <div className="glass-accent" style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '600px', height: '600px' }} />
         <div style={{ textAlign: 'center', zIndex: 100 }}>
-          <h1 style={{ fontSize: '6rem', marginBottom: '4rem', letterSpacing: '-0.04em' }}>DAY 2 ASSIGNMENT</h1>
+          <h1 style={{ fontSize: '6rem', marginBottom: '4rem', letterSpacing: '-0.04em' }}>DAY 2 ASSESSMENT</h1>
           <button 
             onClick={handleEnter}
             style={{ 
@@ -94,7 +94,7 @@ function App() {
               e.currentTarget.style.letterSpacing = '0.3rem';
             }}
           >
-            ENTER ASSIGNMENT
+            ENTER ASSESSMENT
           </button>
         </div>
       </div>
@@ -115,7 +115,7 @@ function App() {
 
       <div className={`card-container ${isVisible ? 'fade-in' : ''}`}>
         <header style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', marginBottom: '3rem' }}>
-          <h1 style={{ textAlign: 'center' }}>Interactive Components</h1>
+          <h1 style={{ textAlign: 'center' }}>Assessment Showcase</h1>
         </header>
 
         {/* Dynamic Interactive Message Area */}
